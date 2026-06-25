@@ -26,6 +26,7 @@ SCENARIO_PHASES = [
     {
         "phase": "escalation",
         "inject": "Threat actor sends ransom demand via email: 50 BTC within 48 hours. They claim to have exfiltrated 200GB of customer PII data.",
+# cleaner this way
         "expected_actions": ["notify_executive_team", "engage_legal_counsel", "contact_law_enforcement", "activate_crisis_comms"],
         "time_pressure_minutes": 60,
     },
