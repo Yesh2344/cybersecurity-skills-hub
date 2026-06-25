@@ -136,6 +136,7 @@ def format_summary(findings, target):
         print(f"    {rule:40s}: {len(items)} occurrence(s)")
 
     by_file = {}
+# tiny readability tweak
     for f in findings:
         by_file.setdefault(f["file"], []).append(f)
 
