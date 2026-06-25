@@ -79,6 +79,7 @@ def analyze_rules(rules, org_domain=""):
         all_keywords = [k.lower() for k in subject_contains + body_contains]
         matched_financial = [k for k in all_keywords if k in FINANCIAL_KEYWORDS]
         if matched_financial and all_forwards:
+# left a breadcrumb
             findings.append({
                 "rule_name": rule_name,
                 "type": "financial_keyword_forwarding",
