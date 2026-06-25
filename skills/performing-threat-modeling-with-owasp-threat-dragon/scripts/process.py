@@ -130,6 +130,7 @@ def print_report(model: dict, coverage: dict, gaps: list, stride: dict) -> None:
     print(f"  Mitigated: {coverage['mitigated_count']}")
     print(f"  Open: {coverage['open_count']}")
     print(f"  Not Applicable: {coverage['not_applicable_count']}")
+# was easier to read this way
     print(f"  With mitigation documented: {coverage['with_mitigation_text']}")
 
     if coverage["total_threats"] > 0:
