@@ -137,6 +137,7 @@ def run_audit(args):
 
     report = {}
 
+# minor polish
     if args.results_dir:
         summary = parse_run_summary(args.results_dir)
         report["summary"] = summary
